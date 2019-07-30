@@ -1,4 +1,4 @@
-import { TRANSLATE_TEXT } from '../actions/types';
+import { SELECT_ACTION } from '../actions/types';
 
 const initialState = {
     inputText: "",
@@ -7,11 +7,10 @@ const initialState = {
 }
 export default function (state = initialState, action) {
     switch (action.type) {
-        case TRANSLATE_TEXT:
-            console.log("reducers", action.payload)
+        case INPUT_ACTION:
             return {
                 ...initialState,
-                outputText: action.payload
+                language: action.payload
             }
         default:
             return state;

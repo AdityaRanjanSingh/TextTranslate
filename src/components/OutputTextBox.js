@@ -6,9 +6,12 @@ class OutputTextBox extends Component {
     render() {
         return (
             <div className="w-100">
-                <textarea className="w-100 output-text-area" placeholder="The dark side I sense in you! Yeesssssss!  . . "></textarea>
+                <p className="w-100 output-text-area">{this.props.outputText}</p>
             </div>
         )
     }
 }
-export default connect(null, {})(OutputTextBox)
+const mapStateToProps = state => ({
+    outputText: state.translate.outputText
+})
+export default connect(mapStateToProps, {})(OutputTextBox)

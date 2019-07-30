@@ -1,13 +1,14 @@
-import { TRANSLATE_TEXT } from './types';
+import { SELECT_ACTION } from './types';
 
-export const translateText = (inputText, lang) => dispatch => {
+export const inputText = (lang) => dispatch => {
 
     // fetch(`https://api.funtranslations.com/translate/${lang}.json?text=${inputText}`)
     //     .then(response => response.json())
     //     .then(data => {
+    console.log(inputText)
     dispatch({
-        type: TRANSLATE_TEXT,
-        payload: "data.contents.translated"
+        type: SELECT_ACTION,
+        payload: lang
     })
     // });
 

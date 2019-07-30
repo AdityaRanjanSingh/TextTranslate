@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import '../css/UserInput.css';
+import { inputText } from '../actions/inputAction'
 class UserInputBox extends Component {
     onUserInput = (e) => {
-        console.log(e);
+        this.props.inputText(e.target.value)
     }
     render() {
         return (
@@ -13,4 +14,7 @@ class UserInputBox extends Component {
         )
     }
 }
-export default connect(null, {})(UserInputBox);
+const mapStateToProps = state => ({
+    inputText: state.input.inputText
+})
+export default connect(mapStateToProps, { inputText })(UserInputBox);
