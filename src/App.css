@@ -1,3 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body{
+  background-color: #004882 !important;
+}
+html,body{
+  height: 100%;
+}
 .translate-container{
   display: flex;
   flex-direction: row;

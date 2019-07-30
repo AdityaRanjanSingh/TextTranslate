@@ -1,0 +1,23 @@
+
+@media only screen and (max-width: 600px) {
+    .user-input-text-area {
+      max-height: 150px;
+      min-height: 150px;
+      height: 150px;
+    }
+  }
+@media only screen and (min-width: 601px) {
+    .user-input-text-area {
+      background-color:#fff;
+      max-height: 20rem;
+      min-height: 20rem;
+      height: 20rem;
+    }
+}
+.user-input-text-area{
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  padding: 10px;
+  outline: none;
+  box-shadow: inset 0px 1px 4px 2px #ccc
+}
