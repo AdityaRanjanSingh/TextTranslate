@@ -1,3 +1,0 @@
-export const TRANSLATE_TEXT = "TRANSLATE_TEXT";
-export const INPUT_ACTION = "INPUT_ACTION";
-export const SELECT_ACTION = "SELECT_ACTION";
