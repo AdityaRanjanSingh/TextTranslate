@@ -1,21 +1,22 @@
 
 @media only screen and (max-width: 600px) {
     .output-text-area {
-      max-height: 150px;
+      max-height: auto;
       min-height: 150px;
-      height: 150px;
+      height: auto;
 
     }
   }
 @media only screen and (min-width: 601px) {
     .output-text-area {
-      background-color:#fff;
-      max-height: 20rem;
-      min-height: 20rem;
-      height: 20rem;
+      
+      max-height: 40rem;
+      min-height: 40rem;
+      height: 40rem;
     }
 }
 .output-text-area{
+  background-color:#fff;
   border-radius: 5px;
   border: 1px solid #cccccc;
   padding: 10px;

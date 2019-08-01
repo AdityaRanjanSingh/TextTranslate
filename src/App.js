@@ -9,12 +9,15 @@ import store from './store'
 function App() {
   return (
     <Provider store={store}>
-      <div className="container pt-5 h-100">
-        <div className="row">
+      <div className="container  h-100">
+        <div className="row d-flex justify-content-center pt-3">
+          <h1 className="page-header">Fun translations</h1>
+        </div>
+        <div className="row pt-4">
           <div className="col-md-5">
             <UserInputBox ></UserInputBox>
           </div>
-          <div className="col-md-2 d-flex align-items-center">
+          <div className="col-md-2 d-flex align-items-center justify-content-center">
             <Actions></Actions>
 
           </div>

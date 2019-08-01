@@ -5,7 +5,7 @@
   outline: none;
 }
 body{
-  background-color: #004882 !important;
+  background-image: radial-gradient( circle 484px at 49.4% 19%,  rgba(23,156,214,1) 0%, rgba(52,48,111,1) 100.2% );
 }
 html,body{
   height: 100%;
@@ -13,4 +13,11 @@ html,body{
 .translate-container{
   display: flex;
   flex-direction: row;
+}
+.page-header{
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: normal;
+  font-family: fantasy;
 }
